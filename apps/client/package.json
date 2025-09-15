@@ -1,0 +1,32 @@
+{
+  "name": "client",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start:dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "type:check": "tsc --noEmit",
+    "format:check": "biome format",
+    "format": "biome format --write",
+    "lint": "biome lint",
+    "lint:fix": "biome lint --write",
+    "order:check": "biome check",
+    "order:fix": "biome check --write"
+  },
+  "dependencies": {
+    "next": "15.5.3",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.4",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@10.16.1"
+}

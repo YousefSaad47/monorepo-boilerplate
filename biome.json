@@ -3,7 +3,15 @@
   "root": true,
   "files": {
     "ignoreUnknown": false,
-    "includes": ["**/*.ts", "**/*.mjs", "**/*.json", "!dist"]
+    "includes": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mjs",
+      "**/*.json",
+      "!**/dist",
+      "!**/.next",
+      "!.turbo"
+    ]
   },
   "vcs": {
     "enabled": false,
@@ -45,6 +53,10 @@
           "options": {
             "groups": [
               ":NODE:",
+              ":BLANK_LINE:",
+              ["react", "react/**"],
+              ":BLANK_LINE:",
+              ["next", "next/**"],
               ":BLANK_LINE:",
               ":PACKAGE:",
               ":BLANK_LINE:",
